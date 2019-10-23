@@ -7,10 +7,9 @@ import Button from '../components/Button'
 import items from '../lib/items'
 import UnidaysDiscountChallenge from '../lib/UnidaysDiscountChallenge'
 
-
-
 export default () => {
   const basket = new UnidaysDiscountChallenge()
+  
   return(
     <Layout>
       <Link href="/basket">

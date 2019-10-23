@@ -22,9 +22,6 @@ const GlobalStyle = createGlobalStyle`
 `
 
 const Layout = ({ children }) => {
-  if(process.browser){
-    localStorage.setItem('basket', JSON.stringify([]))
-  }
   return(
     <div>
       <GlobalStyle />
