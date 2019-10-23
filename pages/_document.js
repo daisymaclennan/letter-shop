@@ -19,6 +19,7 @@ export default class MyDocument extends Document {
           <>
             {initialProps.styles}
             {sheet.getStyleElement()}
+            <link href='https://fonts.googleapis.com/css?family=Abril+Fatface%7COswald:300,400,500&display=swap' rel='stylesheet' />
           </>
         )
       }
