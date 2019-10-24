@@ -28,6 +28,7 @@ const Layout = ({ children }) => {
       <Header>
         <h1>Lettershop.</h1>
       </Header>
+      
       <Content>
         {children}
       </Content>

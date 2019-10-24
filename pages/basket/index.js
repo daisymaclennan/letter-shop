@@ -26,9 +26,15 @@ const Page = ({ directory }) => {
       <div>
         <h2>Your items</h2>
 
-        {process.browser && myItems.map(item => (
-          <CheckoutItem item={item} basket={basket} allItems={items} key={item.product}/>
-        ))}
+        <div>
+          {process.browser && myItems.map(item => (
+            <CheckoutItem item={item}
+                          basket={basket}
+                          allItems={items}
+                          key={item.product}
+            />
+          ))}
+        </div>
 
         <Totals>
           <span>
