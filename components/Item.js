@@ -1,10 +1,11 @@
 import styled from 'styled-components'
 
-const Item = ({className, basket, item}) => (
+const Item = ({className, item, addToBasket}) => {
+  return(
     <div className={`${className}`} onClick={() => {
-      basket.addToBasket(item)
+      addToBasket(item, "add")
     }}>
-    
+
       <div className="outer">
           <span>
             £{item.price}
@@ -19,7 +20,7 @@ const Item = ({className, basket, item}) => (
       </div>
 
     </div>
-  )
+  )}
 
 
 const StyledItem = styled(Item)`
