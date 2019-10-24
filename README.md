@@ -30,9 +30,3 @@ npm install
 ```
 npm run dev
 ```
-
-### Start production mode
-
-```
-npm start
-```
