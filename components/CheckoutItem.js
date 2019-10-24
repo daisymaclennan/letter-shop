@@ -4,7 +4,7 @@ const CheckoutItem = ({className, item, basket, allItems}) => {
   const price = allItems.find(e => e.product === item.product).price
   return(
     <div className={className}>
-      <p>{item.product}</p>
+      <p className="product-name">{item.product}</p>
 
       <div className="quantity">
         <button onClick={() => basket.removeFromBasket(item)}>
@@ -56,6 +56,11 @@ const StyledCheckoutItem = styled(CheckoutItem)`
 
   .price{
     color: rgba(0, 0, 0, 0.46);
+    width: 100px;
+    text-align: right;
+  }
+  .product-name{
+    width: 100px;
   }
 
   @media screen and (max-width: 800px){

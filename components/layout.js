@@ -19,6 +19,12 @@ const GlobalStyle = createGlobalStyle`
       background-color: #ffffff;
     }
   }
+
+  @media screen and (min-width: 800px){
+    .inner-container{
+      padding: 20px;
+    }
+  }
 `
 
 const Layout = ({ children }) => {
@@ -28,7 +34,7 @@ const Layout = ({ children }) => {
       <Header>
         <h1>Lettershop.</h1>
       </Header>
-      
+
       <Content>
         {children}
       </Content>

@@ -23,8 +23,13 @@ const Page = ({ directory }) => {
         </a>
       </Link>
 
-      <div>
-        <h2>Your items</h2>
+      <div className="inner-container">
+        <h2 css={`
+          margin-top: 0;
+          font-weight: 300;
+        `}>
+          Your items
+        </h2>
 
         <div>
           {process.browser && myItems.map(item => (
@@ -50,6 +55,11 @@ const Page = ({ directory }) => {
           <span>
             <p>Delivery fee</p>
             <p>£{basket.deliveryFee()}</p>
+          </span>
+
+          <span className="total">
+            <p>Total to pay</p>
+            <p>£{basket.calculateTotalPrice()}</p>
           </span>
         </Totals>
 
