@@ -1,12 +1,11 @@
 import styled from 'styled-components'
 
-const Item = ({className, basket, item}) => {
-  return(
+const Item = ({className, basket, item}) => (
     <div className={`${className}`} onClick={() => {
-      basket.addItem(item)
+      basket.addToBasket(item)
     }}>
+    
       <div className="outer">
-
           <span>
             £{item.price}
           </span>
@@ -14,12 +13,14 @@ const Item = ({className, basket, item}) => {
           <button>
             Add to basket
           </button>
-        </div>
+      </div>
+
       <div className="inner">
       </div>
+
     </div>
   )
-}
+
 
 const StyledItem = styled(Item)`
   position: relative;
