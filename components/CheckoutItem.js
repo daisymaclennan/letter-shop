@@ -54,6 +54,10 @@ const StyledCheckoutItem = styled(CheckoutItem)`
     align-items: center;
   }
 
+  .quantity > span{
+    text-align: center;
+  }
+
   .price{
     color: rgba(0, 0, 0, 0.46);
     width: 100px;
@@ -74,6 +78,7 @@ const StyledCheckoutItem = styled(CheckoutItem)`
       margin-left: 20px;
       margin-right: 20px;
       font-size: 18px;
+      width: 20px;
     }
     .price{
       font-size: 18px;
@@ -88,9 +93,8 @@ const StyledCheckoutItem = styled(CheckoutItem)`
       height: 30px;
     }
     .quantity > span{
-      margin-left: 30px;
-      margin-right: 30px;
       font-size: 24px;
+      width: 80px;
     }
     .price{
       font-size: 24px;
