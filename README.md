@@ -11,11 +11,11 @@ Product list can be found in [`/lib/items`](/lib/items).
 UnidaysDiscountChallenge class can be found in [`lib/UnidaysDiscountChallenge`] (/lib/UnidaysDiscountChallenge).
 
 ## Get started
-## Clone repository
+### Clone repository
 ```
 git clone https://github.com/daisymaclennan/letter-shop.git
 ```
-## Navigate into repository folder
+### Navigate into repository folder
 ```
 cd letter-shop
 ```
