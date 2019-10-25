@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 
 const Item = ({className, item, addToBasket}) => {
+
   return(
     <div className={`${className}`} onClick={() => {
       addToBasket(item, "add")

@@ -3,6 +3,9 @@ import styled from 'styled-components'
 const CheckoutItem = ({className, item, allItems, addToBasket}) => {
   //Loops through all the items to find the one that matches the price of the current item
   const price = allItems.find(e => e.product === item.product).price
+  if(item.quantity === 0){
+    return null
+  }
   return(
     <div className={className}>
       <p className="product-name">{item.product}</p>
