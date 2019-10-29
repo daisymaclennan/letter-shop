@@ -3,10 +3,8 @@ import styled from 'styled-components'
 const Item = ({className, item, addToBasket}) => {
 
   return(
-    <div className={`${className}`} onClick={() => {
-      addToBasket(item, "add")
-    }}>
-
+    <div className={`${className}`} onClick={() => addToBasket(item, "add")}>
+      {/*When clicked it will add the item to the basket or increase its quantity*/}
       <div className="outer">
           <span>
             £{item.price}
