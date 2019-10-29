@@ -34,7 +34,7 @@ npm run dev
 
 
 ## Testing
-Testing scripts are running using [riteway](https://github.com/ericelliott/riteway).
+Testing scripts are built using [riteway](https://github.com/ericelliott/riteway).
 
 They can be found in [`/source/test`](/source/test).
 I have only provided testing scripts for the basic class and not for the class component as I performed manual testing on this.
