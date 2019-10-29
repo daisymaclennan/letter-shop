@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 
+{/*The box container which holds the main content of the page*/}
 const Content = styled.div`
   background: #FFFFFF;
   position: fixed;

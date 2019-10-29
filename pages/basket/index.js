@@ -1,25 +1,48 @@
 import React from 'react'
 import Link from 'next/link'
+
 import Layout from '../../components/Layout'
 import Button from '../../components/Button'
 import CheckoutItem from '../../components/CheckoutItem'
 import Totals from '../../components/Totals'
-
-import items from '../../lib/items'
 import UnidaysDiscountChallenge from '../../lib/UnidaysDiscountChallenge'
 
-const Page = ({ directory }) => {
+import items from '../../lib/items'
 
-  return(
-    <Layout>
-      <UnidaysDiscountChallenge>
-        {({addToBasket,
-           myItems,
-           calculateSubTotal,
-           calculateDiscount,
-           deliveryFee,
-           calculateTotalPrice
-         }) => {
+export default () => (
+  <Layout>
+    {/*Callback function so that I can access the UnidaysDiscountChallenge
+    components methods throughout its contents*/}
+    <UnidaysDiscountChallenge>
+      {({addToBasket,
+         myItems,
+         calculateTotalBeforeDiscount,
+         calculateDiscount,
+         deliveryFee,
+         calculateTotalPrice
+        }) => {
+           //When the basket is empty it will tell the user their basket is empty
+           if(calculateTotalPrice() === 0){
+             return(
+               <>
+                 <Link href="/">
+                   <a>
+                     <Button>
+                       Continue shopping
+                     </Button>
+                   </a>
+                 </Link>
+                 <div className="inner-container">
+                   <h2 css={`
+                     margin-top: 10px;
+                     font-weight: 300;
+                   `}>
+                     Your basket is empty
+                   </h2>
+                 </div>
+                </>
+             )
+           }
           return(
             <>
               <Link href="/">
@@ -31,6 +54,7 @@ const Page = ({ directory }) => {
               </Link>
 
               <div className="inner-container">
+
                 <h2 css={`
                   margin-top: 0;
                   font-weight: 300;
@@ -38,6 +62,9 @@ const Page = ({ directory }) => {
                   Your items
                 </h2>
 
+                {/*If it is running in the browser it will loops through all of
+                the myItems variable and creates a CheckoutItem component for each
+                passing down the methods required as props*/}
                 <div>
                   {process.browser && myItems.map(item => (
                     <CheckoutItem item={item}
@@ -51,7 +78,7 @@ const Page = ({ directory }) => {
                 <Totals>
                   <span>
                     <p>Subtotal</p>
-                    <p>£{calculateSubTotal()}</p>
+                    <p>£{calculateTotalBeforeDiscount()}</p>
                   </span>
 
                   <span>
@@ -73,8 +100,6 @@ const Page = ({ directory }) => {
               </div>
             </>
         )}}
-      </UnidaysDiscountChallenge>
-    </Layout>
-  )}
-
-export default Page
+    </UnidaysDiscountChallenge>
+  </Layout>
+)

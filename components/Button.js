@@ -1,8 +1,7 @@
 import styled from 'styled-components'
 
+{/*Styles for the buttons shown at the top of the page to navigate between them*/}
 const Button = styled.button`
-
-
   border: 0;
   height: 40px;
 
@@ -16,22 +15,22 @@ const Button = styled.button`
   padding-right: 15px;
 
   @media screen and (max-width: 800px){
-    background: rgba(0, 0, 0, 0.59);
-    color: #FFFFFF;
-
     position: fixed;
     right: 20px;
     top: 120px;
+
+    background: rgba(0, 0, 0, 0.59);
+    color: #FFFFFF;
   }
 
   @media screen and (min-width: 801px){
-    background: #FFFFFF;
-    color: #7C873B;
-    box-shadow: 2px 2px 4px #7C873B;
-
     position: absolute;
     top: -70px;
     right: 0;
+
+    background: #FFFFFF;
+    color: #7C873B;
+    box-shadow: 2px 2px 4px #7C873B;
   }
 `
 

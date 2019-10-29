@@ -7,11 +7,9 @@ import Button from '../components/Button'
 import items from '../lib/items'
 import UnidaysDiscountChallenge from '../lib/UnidaysDiscountChallenge'
 
-export default () => {
-
-  return(
-    <Layout>
-      <UnidaysDiscountChallenge>
+export default () => (
+  <Layout>
+    <UnidaysDiscountChallenge>
       {({addToBasket}) => (
         <>
           <Link href="/basket">
@@ -74,8 +72,7 @@ export default () => {
             ))}
           </div>
         </>
-    )}
+      )}
     </UnidaysDiscountChallenge>
-    </Layout>
-  )
-}
+  </Layout>
+)
