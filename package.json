@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest",
+    "test": "node -r @babel/register -r @babel/polyfill source/test",
     "dev": "next",
     "dist": "next build",
     "start": "next start"
