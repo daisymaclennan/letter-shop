@@ -8,7 +8,8 @@ Clientside routes are in [`/pages`](/pages).
 
 Product list can be found in [`/lib/items`](/lib/items).
 
-UnidaysDiscountChallenge class can be found in [`/lib/UnidaysDiscountChallenge`](/lib/UnidaysDiscountChallenge).
+UnidaysDiscountChallenge class component can be found in [`/lib/UnidaysDiscountChallenge`](/lib/UnidaysDiscountChallenge).
+UnidaysDiscountChallenge class without implementations such as state and local storage can be found in [`/lib/UnidaysDiscountChallenge-alt`](/lib/UnidaysDiscountChallenge-alt).
 
 ## Get started
 ### Clone repository
