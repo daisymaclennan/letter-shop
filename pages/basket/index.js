@@ -13,7 +13,7 @@ export default () => (
   <Layout>
     {/*Callback function so that I can access the UnidaysDiscountChallenge
     components methods throughout its contents*/}
-    <UnidaysDiscountChallenge>
+    <UnidaysDiscountChallenge items={items}>
       {({addToBasket,
          myItems,
          calculateTotalBeforeDiscount,
