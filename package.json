@@ -7,7 +7,11 @@
     "test": "node -r @babel/register -r @babel/polyfill source/test",
     "dev": "next",
     "dist": "next build",
-    "start": "next start"
+    "start": "next start",
+    "build": "next build",
+    "start": "next start",
+    "export": "next export",
+    "deploy": "next build && next export && git add out/ && git commit -m \"Deploy gh-pages\" && git subtree push --prefix out origin gh-pages"
   },
   "author": "Daisy",
   "license": "ISC",
