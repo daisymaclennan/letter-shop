@@ -7,7 +7,7 @@
     "test": "node -r @babel/register -r @babel/polyfill source/test",
     "dev": "next",
     "dist": "next build",
-    "start": "next start",
+    "start": "next start"
   },
   "author": "Daisy",
   "license": "ISC",
