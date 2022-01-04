@@ -7,7 +7,8 @@
     "test": "node -r @babel/register -r @babel/polyfill source/test",
     "dev": "next",
     "dist": "next build",
-    "start": "next start"
+    "start": "next start",
+    "lint": "next lint"
   },
   "author": "Daisy",
   "license": "ISC",
@@ -31,6 +32,8 @@
     "babel-plugin-styled-components": "^1.10.6",
     "enzyme": "^3.10.0",
     "enzyme-adapter-react-16": "^1.15.1",
+    "eslint": "8.6.0",
+    "eslint-config-next": "12.0.7",
     "jest": "^24.9.0",
     "riteway": "^6.1.0"
   }

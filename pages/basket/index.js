@@ -9,7 +9,7 @@ import UnidaysDiscountChallenge from "../../lib/UnidaysDiscountChallenge";
 
 import items from "../../lib/items";
 
-export default () => (
+const Page = () => (
   <Layout>
     {/*Callback function so that I can access the UnidaysDiscountChallenge
     components methods throughout its contents*/}
@@ -105,3 +105,5 @@ export default () => (
     </UnidaysDiscountChallenge>
   </Layout>
 );
+
+export default Page;
