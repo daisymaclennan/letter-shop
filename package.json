@@ -6,7 +6,7 @@
   "scripts": {
     "test": "node -r @babel/register -r @babel/polyfill source/test",
     "dev": "next",
-    "dist": "next build",
+    "build": "next build",
     "start": "next start",
     "lint": "next lint"
   },
