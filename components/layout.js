@@ -11,6 +11,10 @@ const GlobalStyle = createGlobalStyle`
     color: #020200;
   }
 
+  button {
+    cursor: pointer;
+  }
+
   *:focus{
     outline: 0;
   }

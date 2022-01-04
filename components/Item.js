@@ -24,6 +24,7 @@ const Item = ({className, item, addToBasket}) => {
 
 const StyledItem = styled(Item)`
   position: relative;
+  cursor: pointer;
   .inner{
     transition: 0.25s ease-in-out;
 
